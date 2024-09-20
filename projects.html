@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sami Hachroun - Projects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="home-icon.png" alt="Home Icon"></a>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="experience.html">CTF</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="bio.html">Bio</a></li>
+            <li><a href="interest.html">Interest</a></li>
+        </ul>
+        <div class="theme-toggle">☀</div>
+    </nav>
+
+    <header>
+        <h1>My Projects</h1>
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+            <button onclick="filterProjects('cyber')">Cyber Projects</button>
+            <button onclick="filterProjects('developer')">Developer Projects</button>
+            <button onclick="filterProjects('all')">Show All</button>
+        </div>
+    </header>
+
+    <section class="projects">
+        <!-- Bandit Project (Cyber) -->
+        <div class="project-card" data-category="cyber">
+            <img src="path/to/bandit-image.png" alt="OverTheWire Bandit Project">
+            <h2>OverTheWire Bandit Project</h2>
+            <p>This project involves solving CTF challenges by navigating a remote server using SSH and Linux commands to find hidden passwords.</p>
+            <a href="https://overthewire.org/wargames/" target="_blank">Read More</a>
+            <p class="techs-used">Techs Used: Linux, SSH</p>
+        </div>
+
+        <!-- Firewall Project (Cyber) -->
+        <div class="project-card" data-category="cyber">
+            <img src="path/to/firewall-image.png" alt="Firewall Automation Project">
+            <h2>Firewall Rule Automation</h2>
+            <p>Automation project focusing on managing and deploying firewall rules using Python scripts for enhanced security in cloud environments.</p>
+            <a href="#">Read More</a>
+            <p class="techs-used">Techs Used: Python, Firewalls base knowlegde</p>
+        </div>
+
+        <!-- SOC Home Lab Project (Cyber) -->
+        <div class="project-card" data-category="cyber">
+            <img src="path/to/soc-image.png" alt="SOC Home Lab">
+            <h2>SOC Home Lab</h2>
+            <p>This home lab project simulates a Security Operations Center (SOC) environment, using tools like Splunk for log analysis and threat detection.</p>
+            <a href="#">Read More</a>
+            <p class="techs-used">Techs Used: Splunk, SIEM, ELK StackC, ybersecurity</p>
+        </div>
+
+        <!-- Developer Project Example -->
+        <div class="project-card" data-category="developer">
+            <img src="path/to/dev-image.png" alt="Developer Project">
+            <h2>Todo App</h2>
+            <p>A simple todo list app that allows users to create, update, and delete tasks. Built with React and SQL.</p>
+            <a href="#">Read More</a>
+            <p class="techs-used">Techs Used: JavaScript, React, SQL</p>
+        </div>
+
+        <!-- Developer Project Example -->
+        <div class="project-card" data-category="developer">
+            <img src="path/to/algorithm-project-image.png" alt="Algorithm Project">
+            <h2>Efficient Data Processing Algorithm</h2>
+            <p>Developed an advanced algorithm for processing large datasets, improving accuracy, speed, and efficiency. Recognized as one of the top-performing solutions for handling large-scale data at my level.</p>
+            <a href="https://github.com/MrFirewall1/Algo-project" target="_blank">Read More</a>
+            <p class="techs-used">Techs Used: Java, SQL, Data Structures, Algorithms</p>
+        </div>        
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sami Hachroun. Powered by HTML & CSS.</p>
+    </footer>
+
+    <!-- JavaScript for Filtering Projects -->
+    <script>
+        function filterProjects(category) {
+            var projects = document.querySelectorAll('.project-card');
+            projects.forEach(function(project) {
+                if (category === 'all') {
+                    project.style.display = 'block';
+                } else if (project.getAttribute('data-category') === category) {
+                    project.style.display = 'block';
+                } else {
+                    project.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

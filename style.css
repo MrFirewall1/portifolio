@@ -1,0 +1,272 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #101010;
+    color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #333;
+}
+
+nav .logo img {
+    width: 30px;
+    height: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #77B2F7;
+}
+
+nav .theme-toggle {
+    font-size: 20px;
+    cursor: pointer;
+    color: #f1f1f1;
+}
+
+nav .theme-toggle:hover {
+    color: #77B2F7;
+}
+
+header {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #151515;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    color: #999;
+}
+
+section {
+    text-align: center;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+ul li {
+    padding: 15px;
+    border-bottom: 1px solid #333;
+}
+
+ul li a {
+    color: #77B2F7;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: #fff;
+}
+
+ul .date {
+    float: right;
+    color: #777;
+}
+
+/* Prosjektkort layout */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.project-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project-card h2 {
+    color: #77B2F7;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.project-card a {
+    color: #77B2F7;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.project-card a:hover {
+    color: #fff;
+}
+
+.project-card .techs-used {
+    color: #ffd700;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+/* Knappestil for filtrering */
+.filter-buttons {
+    margin-bottom: 20px;
+}
+
+.filter-buttons button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #1a1a1a; /* Mørk bakgrunn som resten av siden */
+    color: #f1f1f1; /* Lys tekst */
+    border: 1px solid #333; /* Lett grense */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.filter-buttons button:hover {
+    background-color: #77B2F7; /* Hover-effekt som matcher lenker */
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Legg til en liten skygge på hover */
+}
+
+.filter-buttons button:focus {
+    outline: none; /* Fjern default focus outline */
+    background-color: #333; /* Marker knapp som er i fokus */
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    padding: 20px 0;
+    background-color: #151515;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+    color: #777;
+}
+
+.interests-section {
+    text-align: left;
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #202020;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.interests-section h2 {
+    font-size: 28px;
+    color: #77B2F7;
+}
+
+.interests-section p {
+    color: #ccc;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Seksjon for 90-dagers journal */
+.journal-section {
+    text-align: center;
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #202020;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.journal-section img {
+    margin-top: 20px;
+    max-width: 200px;
+    border-radius: 5px;
+}
+
+.journal-section h2 {
+    font-size: 28px;
+    color: #77B2F7;
+}
+
+.journal-section p {
+    color: #ccc;
+    font-size: 16px;
+}
+
+.journal-section a {
+    color: #77B2F7;
+    text-decoration: none;
+}
+
+.journal-section a:hover {
+    color: #fff;
+}
+
+/* Footer styling */
+footer {
+    padding: 20px 0;
+    background-color: #151515;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+    color: #777;
+}
