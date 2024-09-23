@@ -15,9 +15,17 @@ nav {
     border-bottom: 1px solid #333;
 }
 
+/* Home Icon Styling */
 nav .logo img {
-    width: 30px;
-    height: 30px;
+    width: 40px; /* Økt størrelse for bedre synlighet */
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Legg til overgang for transformasjon og filter */
+}
+
+nav .logo img:hover {
+    transform: scale(1.2); /* Forstørrer litt ved hover */
+    filter: drop-shadow(0 0 10px #77B2F7); /* Legg til en subtil glød-effekt */
+    cursor: pointer;
 }
 
 nav ul {
@@ -64,6 +72,15 @@ header h1 {
 header p {
     font-size: 18px;
     color: #999;
+}
+
+.logo img {
+    transition: transform 0.3s ease; 
+}
+  
+.logo img:hover {
+    transform: scale(1.2);
+    cursor: pointer; 
 }
 
 section {
