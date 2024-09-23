@@ -8,23 +8,22 @@ body {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Endret fra space-between til center */
     align-items: center;
     padding: 15px 50px;
     background-color: #1a1a1a;
     border-bottom: 1px solid #333;
 }
 
-/* Home Icon Styling */
 nav .logo img {
-    width: 40px; /* Økt størrelse for bedre synlighet */
+    width: 40px;
     height: auto;
-    transition: transform 0.3s ease, filter 0.3s ease; /* Legg til overgang for transformasjon og filter */
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 nav .logo img:hover {
-    transform: scale(1.2); /* Forstørrer litt ved hover */
-    filter: drop-shadow(0 0 10px #77B2F7); /* Legg til en subtil glød-effekt */
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 10px #77B2F7);
     cursor: pointer;
 }
 
@@ -120,7 +119,6 @@ ul .date {
     color: #777;
 }
 
-/* Prosjektkort layout */
 .projects {
     display: flex;
     flex-wrap: wrap;
@@ -179,7 +177,6 @@ ul .date {
     margin-top: 10px;
 }
 
-/* Knappestil for filtrering */
 .filter-buttons {
     margin-bottom: 20px;
 }
@@ -187,27 +184,26 @@ ul .date {
 .filter-buttons button {
     padding: 10px 20px;
     margin: 0 10px;
-    background-color: #1a1a1a; /* Mørk bakgrunn som resten av siden */
-    color: #f1f1f1; /* Lys tekst */
-    border: 1px solid #333; /* Lett grense */
+    background-color: #1a1a1a;
+    color: #f1f1f1;
+    border: 1px solid #333;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .filter-buttons button:hover {
-    background-color: #77B2F7; /* Hover-effekt som matcher lenker */
+    background-color: #77B2F7;
     color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Legg til en liten skygge på hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .filter-buttons button:focus {
-    outline: none; /* Fjern default focus outline */
-    background-color: #333; /* Marker knapp som er i fokus */
+    outline: none;
+    background-color: #333;
     color: #fff;
 }
 
-/* Footer */
 footer {
     padding: 20px 0;
     background-color: #151515;
@@ -240,7 +236,6 @@ footer p {
     line-height: 1.6;
 }
 
-/* Seksjon for 90-dagers journal */
 .journal-section {
     text-align: center;
     margin: 40px 0;
@@ -276,7 +271,6 @@ footer p {
     color: #fff;
 }
 
-/* Footer styling */
 footer {
     padding: 20px 0;
     background-color: #151515;
