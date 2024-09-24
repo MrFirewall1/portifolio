@@ -281,3 +281,40 @@ footer p {
     font-size: 14px;
     color: #777;
 }
+
+.result-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Sentrerer hele containeren horisontalt */
+    margin-bottom: 30px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 900px; /* Angi en maks bredde for innholdet */
+    margin-left: auto; /* Sentrerer hele containeren */
+    margin-right: auto; /* Sentrerer hele containeren */
+}
+
+.result-image {
+    max-width: 40%; /* Bildet tar 40% av bredden */
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.result-description {
+    max-width: 60%; /* Beskrivelsen tar 60% av bredden */
+    color: #f1f1f1;
+}
+
+.result-description h3 {
+    color: #77B2F7;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.result-description p {
+    color: #ccc;
+    font-size: 1em;
+}
